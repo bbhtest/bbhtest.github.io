@@ -1,0 +1,156 @@
+
+body {
+  font-family: "Sora", sans-serif;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  overflow: auto;
+  background-color: #252525 !important;
+  margin-right: auto;
+
+  
+}
+
+
+/*HEADER BOX */
+.headerbox {
+  color: #ffa200;
+  text-align: center;
+  padding-bottom: 10%;
+  font-weight: 900;
+
+}
+
+.btnsBox a:hover {color: #252525 !important;}
+
+.buttonreservephoto a:hover {color: #252525 !important;}
+
+
+/*CAR BOXES DISPLAY */
+.row{
+margin-bottom: 7%;
+width: 100%;
+text-align: center;
+margin-left: auto ;
+margin-right: auto;
+
+}
+
+
+.titleBoxmain{ background-color: #00655e;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border-top-left-radius: 7px;
+    border-top-right-radius:7px;
+   
+}
+
+.title {
+font-size: 20px;
+
+font-family: "Sora", sans-serif;
+padding-top: 30px;
+}
+
+
+
+
+
+/*Photosbtn and reserve now buttons*/
+
+.buttonreservephoto {
+background-color:#ffa200;
+color: white;
+border-radius: 10px;
+padding:  14px 40px;
+display: block;
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+text-transform: uppercase;
+/*white-space: nowrap;*/
+font-family: Tahoma, Verdana, sans-serif;
+font-weight: 700;
+font-size: 16px;
+
+
+}
+
+#photosbtn{
+  margin-bottom: 0.5%;
+
+
+}
+
+
+.item{background-color: #323232;
+  position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+ border-radius: 7px;
+}
+#reservebtn{margin-bottom: 15px;}
+
+.details{  background-color: #323232;}
+
+
+ 
+/*details..price, descriptions */
+
+.miniInf {
+  background-color: #323232;
+  color: #fff;
+ /* box-shadow: 10px 10px 8px 10px #888888;*/
+ text-transform: uppercase;
+ padding:15px;
+}
+
+.price{float: left;
+padding-bottom: 15px;}
+.year{float:right;
+  padding-bottom: 15px;}
+
+.priceline{  border-top: 1px solid rgb(255, 255, 255);
+opacity: 20%;
+
+}
+
+.descriptionBox{  background-color: #323232;
+  color: rgb(241, 235, 235);
+ /* box-shadow: 10px 10px 8px 10px #888888;*/
+
+ padding:15px;
+margin-left: 12px;
+margin-right: 12px;
+font-style: italic;
+font-size: 12px;}
+
+
+
+
+/*ABOUT US TEXT */
+
+.aboutustext {color: #fff;
+  margin-left: 3%;
+  margin-right: 4%;
+  padding-top: 3%;
+  font-size: 15px;
+  padding-right: 5%;
+  padding-left: 4%;
+}
+
+p {text-align: left;}
+
+h1 {color: #ffa200 !important; text-align: left;}
+
+#aboutusimage{
+  display: block;
+  clear: both;
+  width: 100%;
+  height: auto;
+}
+
+
+
+

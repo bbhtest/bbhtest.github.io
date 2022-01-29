@@ -1,0 +1,45 @@
+.detail {
+    background-color: rgb(255, 248, 152);
+    padding: 25px 35px;
+}
+
+ .titleBox {
+    font-size: 19px;
+    font-family: "Knockout-HTF30-JuniorWelterwt";
+    color: #636363;
+    text-transform: uppercase;
+    padding: 17px 20px;
+    border-bottom: 1px solid #9e9e9e;
+}
+
+span {    display: inline-block;
+    vertical-align: middle;
+    padding: 7px 3px;
+}
+
+.title {
+    font-size: 16px;
+    font-family: "Knockout-HTF30-JuniorWelterwt";
+    color: #303030;
+    text-transform: uppercase;
+    border-bottom: 1px solid #9e9e9e;
+}
+
+.tableBox     {padding: 20px 0;
+}
+
+div table tr td {
+    font-size: 18px;
+    font-family: "Knockout-HTF30-JuniorWelterwt";
+    color: #636363;
+    text-transform: uppercase;
+    line-height: 2.2;
+}
+
+div {
+    padding-right: 20px;
+}
+
+td, th {
+    padding: 0;
+}
