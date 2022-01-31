@@ -5,7 +5,7 @@
    }
    
    .container-fluid{
-     background-color: #252525;
+     background-color:  #00655e;
    
    
    padding-right: 50%;}
@@ -25,7 +25,7 @@
    
    }
    
-   
+   .headerbox {margin: 2%;}
    
    
    .topnav a {
@@ -135,6 +135,10 @@ text-decoration: none !important;}
 
    /*FOOTER*/
 
+
+  
+  
+
 .footerend{
     margin: auto;
     background-color: #00655e ;
@@ -155,6 +159,49 @@ text-decoration: none !important;}
      font-size: 15px;
      text-align: left;
    }
+
+   
+@media only screen and (max-width: 700px) {
+  .footeraddress {
+  
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 10%;
+  
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footeraddress {
+  
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 4%;
+ 
+  }
+}
+
+   
+@media only screen and (max-width: 700px) {
+  .col2 {
+  
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 10%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .col2 {
+  
+    margin-right: auto;
+    margin-left: auto;
+
+    margin-bottom: 4%;
+  }
+}
+
+
    
    .openinghours {
      padding-top: 10px;
@@ -164,6 +211,7 @@ text-decoration: none !important;}
      font-size: 15px;
      padding-left: 7%;
      margin-left: 10%;
+     
    }
    
    
@@ -182,16 +230,25 @@ text-decoration: none !important;}
    
    .time {text-align: left;}
    
+   /*
    .wrap{
    position: absolute;
    right: 40%;
    text-align: center;
    top: 50%;
    transform: translateY(-50%);
+   }*/
+
+   .getdirections {
+      margin-right: auto;
+      margin-left: auto;
+
    }
    
-   .mapicon {margin-left: 70px;
-   margin-right: auto;}
+   /*
+   .mapicon {
+     margin-left: 70px;
+   margin-right: auto;}*/
    
    footer {background-color: #252525}
    
@@ -201,11 +258,12 @@ text-decoration: none !important;}
      margin-left: 2.5%;
    padding-bottom: 2%;
    text-align: center;
+   color: #fff;
    }
    
    .footerend {padding-bottom: 0% !important;
    
-   background-color: #00655e}
+   background-color: #00655e !important}
    
    .social {padding-top: 2%;}
 
@@ -216,3 +274,5 @@ text-decoration: none !important;}
 #activemenu:hover {color: #fff !important;
 
 }
+
+#index-container { background-color: #252525 !important}
