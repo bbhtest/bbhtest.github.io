@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+<style>
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+.searchTitle {   
+  margin-left: 5%;
+  color: #fff;
+
+}
+
+.yearMakeModel { 
+  margin-top: 1%;
+  margin-left: 5%;
+  color: #fff;
+  /*margin-bottom: 2%;*/
+}
+
+#yearmakemodel {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ 
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+body {background-color: rgb(158, 158, 245);}
+
+#year1,#make1,#model1,#color1 {display: none;}
+</style>
+<body>
+
+<h2>Filter DIV Elements</h2>
+
+<div class ="searchTitle"> <h4>SEARCH OUR INVENTORY</h4> </div>
+<div class = "yearMakeModel"> 
+  
+  <ul id ="yearmakemodel">
+  <li ><a id = "year">YEAR</a></li>
+  <li id><a id ="make">MAKE</a></li>
+  <li><a id = "model">MODEL</a></li>
+  <li><a id = "color">COLOR</a></li>
+  
+</ul></div>
+<script>
+
+
+  $(document).ready(function(){
+    $(year).click(function(){
+      $(year1).toggle();
+      document.getElementById("make1").style.display = "none";
+      document.getElementById("model1").style.display = "none";
+      document.getElementById("color1").style.display = "none";
+    
+
+    });
+  });
+  
+  $(document).ready(function(){
+    $(make).click(function(){
+      $(make1).toggle();
+      document.getElementById("year1").style.display = "none";
+      document.getElementById("model1").style.display = "none";
+      document.getElementById("color1").style.display = "none";
+    
+
+    });
+  });
+  
+  $(document).ready(function(){
+    $(model).click(function(){
+      $(model1).toggle();
+      document.getElementById("year1").style.display = "none";
+      document.getElementById("make1").style.display = "none";
+      document.getElementById("color1").style.display = "none";
+    
+
+    });
+  });
+  
+  $(document).ready(function(){
+    $(color).click(function(){
+      $(color1).toggle();
+      document.getElementById("year1").style.display = "none";
+      document.getElementById("make1").style.display = "none";
+      document.getElementById("model1").style.display = "none";
+    
+
+    });
+  });</script>
+
+
+
+<div id="myBtnContainer">
+
+  <div id ="year1">
+  <button class="btn" onclick="filterSelection('2021')"> 2021</button>
+  <button class="btn" onclick="filterSelection('2019')"> 2019</button>
+  <button class="btn" onclick="filterSelection('2018')"> 2018</button>
+  <button class="btn" onclick="filterSelection('2017')"> 2017</button>
+  <button class="btn" onclick="filterSelection('2016')"> 2016</button>
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  
+</div>
+
+<div id ="make1">
+  <button class="btn" onclick="filterSelection('BMW')"> BMW</button>
+  <button class="btn" onclick="filterSelection('Maserati')"> Maserati </button>
+  <button class="btn" onclick="filterSelection('Chevrolet ')"> Chevrolet </button>
+  <button class="btn" onclick="filterSelection('Porsche')"> Porsche </button>
+  <button class="btn" onclick="filterSelection('Jeep')"> Jeep  </button>
+  <button class="btn" onclick="filterSelection('Can-Am')"> Can-Am  </button>
+  
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+</div>
+
+<div id ="model1">
+  <button class="btn" onclick="filterSelection('i8 ')"> i8 </button>
+  <button class="btn" onclick="filterSelection('Quattroporte ')"> Quattroporte</button>
+  <button class="btn" onclick="filterSelection('Corvette ')"> Corvette </button>
+  <button class="btn" onclick="filterSelection('650i ')"> 650i </button>
+  <button class="btn" onclick="filterSelection('Macan  ')"> 650i </button>
+  <button class="btn" onclick="filterSelection('Wrangler Rubicon')"> 650i </button>
+  <button class="btn" onclick="filterSelection('2 Series')"> 650i </button>
+  <button class="btn" onclick="filterSelection('3 Wheeler')"> 3 Wheeler </button>
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  
+</div>
+
+<div id ="color1">
+  
+  <button class="btn" onclick="filterSelection('white')"> White</button>
+  <button class="btn" onclick="filterSelection('red')"> Red</button>
+  <button class="btn" onclick="filterSelection('gray')"> Gray</button>
+  <button class="btn" onclick="filterSelection('black')"> Black</button>
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+
+</div>
+
+
+</div>
+
+<div class="container">
+  <div class="filterDiv 2019 BMW i8 white">2019 BMW i8 (White) </div>
+  <div class="filterDiv 2018 Maserati Quattroport white">2018 Maserati Quattroporte (White)</div>
+  <div class="filterDiv 2021 Chevrolet Corvette red">2021 Chevrolet Corvette (Red)</div>
+  <div class="filterDiv 2019 Chevrolet Corvette white">2019 Chevrolet Corvette (White)</div>
+  <div class="filterDiv 2018 BMW 650i white">2018 BMW 650i (White)</div>
+  <div class="filterDiv 2018 Porsche Macan white">2018 Porsche Macan (White)</div>
+  <div class="filterDiv 2017 Jeep Wrangler Rubicon gray">2017 Jeep Wrangler Rubicon (Gray)</div>
+  <div class="filterDiv 2018 Jeep Wrangler Rubicon black">2018 Jeep Wrangler Rubicon (Black)</div>
+  <div class="filterDiv 2016 Jeep Wrangler red">2016 Jeep Wrangler (Red)</div>
+  <div class="filterDiv 2018 BMW 2 Series gray">2018 BMW 2 Series (Gray)</div>
+  <div class="filterDiv 2019 Can-Am 3 Wheeler black ">2019 Can-Am 3 Wheeler (Black)  </div>
+
+</div>
+
+
+
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+</script>
+
+
+</body>
+</html>
