@@ -10,8 +10,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="js/filterSearchCar.js"></script>
-  
 
 <header>
 
@@ -91,260 +89,6 @@
 <div class ="headerbox"> <h2>EXOTIC VEHICLE RENTALS IN DALLAS</h2></div>
 
           <!--END OF HEADER BOX-->
-
- <!----
-<div class ="searchTitle"> <h4>SEARCH OUR INVENTORY</h4> </div>
-<div class = "yearMakeModel"> 
-  
-  <ul id ="yearmakemodel">
-  <li ><a id = "year">YEAR</a></li>
-  <li id><a id ="make">MAKE</a></li>
-  <li><a id = "model">MODEL</a></li>
-  <li><a id = "color">COLOR</a></li>
-  
-</ul></div>
-<script>
-
-
-  $(document).ready(function(){
-    $(year).click(function(){
-      $(year1).toggle();
-      document.getElementById("make1").style.display = "none";
-      document.getElementById("model1").style.display = "none";
-      document.getElementById("color1").style.display = "none";
-      document.getElementByClassName("filterDiv").style.display = "none";
-    
-
-    });
-  });
-  
-  $(document).ready(function(){
-    $(make).click(function(){
-      $(make1).toggle();
-      document.getElementById("year1").style.display = "none";
-      document.getElementById("model1").style.display = "none";
-      document.getElementById("color1").style.display = "none";
-    
-
-    });
-  });
-  
-  $(document).ready(function(){
-    $(model).click(function(){
-      $(model1).toggle();
-      document.getElementById("year1").style.display = "none";
-      document.getElementById("make1").style.display = "none";
-      document.getElementById("color1").style.display = "none";
-    
-
-    });
-  });
-  
-  $(document).ready(function(){
-    $(color).click(function(){
-      $(color1).toggle();
-      document.getElementById("year1").style.display = "none";
-      document.getElementById("make1").style.display = "none";
-      document.getElementById("model1").style.display = "none";
-    
-
-    });
-  });</script>
-
-
-
-<div id="myBtnContainer">
-
-  <div id ="year1">
- 
-    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('2021')"> 2021</button>
-  <button class="btn" onclick="filterSelection('2019')"> 2019</button>
-  <button class="btn" onclick="filterSelection('2018')"> 2018</button>
-  <button class="btn" onclick="filterSelection('2017')"> 2017</button>
-  <button class="btn" onclick="filterSelection('2016')"> 2016</button>
- 
-  
-</div>
-
-<div id ="make1">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('BMW')"> BMW</button>
-  <button class="btn" onclick="filterSelection('Maserati')"> Maserati </button>
-  <button class="btn" onclick="filterSelection('Chevrolet ')"> Chevrolet </button>
-  <button class="btn" onclick="filterSelection('Porsche')"> Porsche </button>
-  <button class="btn" onclick="filterSelection('Jeep')"> Jeep  </button>
-  <button class="btn" onclick="filterSelection('Can-Am')"> Can-Am  </button>
-  
- 
-</div>
-
-<div id ="model1">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('i8 ')"> i8 </button>
-  <button class="btn" onclick="filterSelection('Quattroporte ')"> Quattroporte</button>
-  <button class="btn" onclick="filterSelection('Corvette ')"> Corvette </button>
-  <button class="btn" onclick="filterSelection('650i ')"> 650i </button>
-  <button class="btn" onclick="filterSelection('Macan  ')"> 650i </button>
-  <button class="btn" onclick="filterSelection('Wrangler Rubicon')"> 650i </button>
-  <button class="btn" onclick="filterSelection('2 Series')"> 650i </button>
-  <button class="btn" onclick="filterSelection('3 Wheeler')"> 3 Wheeler </button>
-
-  
-</div>
-
-<div id ="color1">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('white')"> White</button>
-  <button class="btn" onclick="filterSelection('red')"> Red</button>
-  <button class="btn" onclick="filterSelection('gray')"> Gray</button>
-  <button class="btn" onclick="filterSelection('black')"> Black</button>
-  
-
-</div>
-
-
-</div> <!---div myBtnContainer-->
-
-<!--DIV CLLASS CONTRAINER WITH VALUES-->
-<!----
-<div class="container">
-  <div class="filterDiv 2019 BMW i8 white">2019 BMW i8 (White) </div>
-  <div class="filterDiv 2018 Maserati Quattroport white">2018 Maserati Quattroporte (White)</div>
-  <div class="filterDiv 2021 Chevrolet Corvette red">2021 Chevrolet Corvette (Red)</div>
-  <div class="filterDiv 2019 Chevrolet Corvette white">2019 Chevrolet Corvette (White)</div>
-  <div class="filterDiv 2018 BMW 650i white">2018 BMW 650i (White)</div>
-  <div class="filterDiv 2018 Porsche Macan white">2018 Porsche Macan (White)</div>
-  <div class="filterDiv 2017 Jeep Wrangler Rubicon gray">2017 Jeep Wrangler Rubicon (Gray)</div>
-  <div class="filterDiv 2018 Jeep Wrangler Rubicon black">2018 Jeep Wrangler Rubicon (Black)</div>
-  <div class="filterDiv 2016 Jeep Wrangler red">2016 Jeep Wrangler (Red)</div>
-  <div class="filterDiv 2018 BMW 2 Series gray">2018 BMW 2 Series (Gray)</div>
-  <div class="filterDiv 2019 Can-Am 3 Wheeler black ">2019 Can-Am 3 Wheeler (Black)  </div>
-
-</div>
--->
-<!--DIV CLLASS CONTRAINER WITH VALUES
-
-
-
-
-<script>
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-
-</script>
--->
-<!--END OF INVENTORY-->
-
-<div class ="contact-us-section">
-  
-	<center>
-		<h4 class="sent-notification"></h4>
-
-		<form id="myForm">
-			<h2>Send an Email</h2>
-
-			<label>Name</label>
-			<input id="name" type="text" placeholder="Enter Name">
-			<br><br>
-
-			<label>Email</label>
-			<input id="email" type="text" placeholder="Enter Email">
-			<br><br>
-
-			<label>Subject</label>
-			<input id="subject" type="text" placeholder=" Enter Subject">
-			<br><br>
-
-			<p>Message</p>
-			<textarea id="body" rows="5" placeholder="Type Message"></textarea><!--textarea tag should be closed (In this coding UI textarea close tag cannot be used)-->
-			<br><br>
-
-			<button type="button" onclick="sendEmail()" value="Send An Email">Submit</button>
-		</form>
-	</center>
-
-	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript">
-        function sendEmail() {
-            var name = $("#name");
-            var email = $("#email");
-            var subject = $("#subject");
-            var body = $("#body");
-
-            if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(subject) && isNotEmpty(body)) {
-                $.ajax({
-                   url: 'sendEmail.php',
-                   method: 'POST',
-                   dataType: 'json',
-                   data: {
-                       name: name.val(),
-                       email: email.val(),
-                       subject: subject.val(),
-                       body: body.val()
-                   }, success: function (response) {
-                        $('#myForm')[0].reset();
-                        $('.sent-notification').text("Message Sent Successfully.");
-                   }
-                });
-            }
-        }
-
-        function isNotEmpty(caller) {
-            if (caller.val() == "") {
-                caller.css('border', '1px solid red');
-                return false;
-            } else
-                caller.css('border', '');
-
-            return true;
-        }
-    </script>
-
-
-
-
-</div>
          
 
 <div class = "container-fluid" id ="index-container">
@@ -352,17 +96,16 @@ for (var i = 0; i < btns.length; i++) {
 
     <div class="row">
  <!--CAR ONE-->
-            <div class="col-xs-12 col-sm-6 col-md-3  car-col" style="height: 694px;">
-              <div class="filterDiv 2019 BMW i8 white">
-                  <div class="item" title="2019 BMW i8">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 car-col" style="height: 694px;">
+                  <div class="item" title="Used 2019 ROLLS ROYCE CULLINAN-Atlanta, GA">
                         <div class="vehicle">
-                            <div class="titleBoxmain"> <span class="title">2019 BMW i8</h2> 
+                            <div class="titleBoxmain"> <span class="title">CAR ONE</h2> 
                             </div> <!--div titlebox-->
                                 
                                 <div class="frame">
                                         <div class="inner">
                                            
-                                                <img class="full resized" src="img/lambo14.png" alt="2019 BMW i8"  class = "img-responsive" width = "100%">
+                                                <img class="full resized" src="img/lambo14.png" alt="Used 2019 ROLLS ROYCE CULLINAN"  class = "img-responsive" width = "100%">
                                           
                                         </div><!--div inner-->
                                 </div> <!--div frame-->
@@ -396,8 +139,6 @@ for (var i = 0; i < btns.length; i++) {
                                                       </div><!--div btnsbox--> 
                                  </div> <!--div details--> <hr class ="priceline">  
                  </div><!--div item-->
-
-                </div> <!--filterDIV-->
                           
            </div>  <!--col-->
                           
@@ -435,17 +176,16 @@ for (var i = 0; i < btns.length; i++) {
 
 
  <!--CAR TWO-->
- <div class="col-xs-12 col-sm-6 col-md-3   car-col" style="height: 694px;">
-  <div class="filterDiv 2018 Maserati Quattroporte white">
-  <div class="item" title="2018 Maserati Quattroporte ">
+ <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 car-col" style="height: 694px;">
+  <div class="item" title="Used 2019 ROLLS ROYCE CULLINAN-Atlanta, GA">
         <div class="vehicle">
-            <div class="titleBoxmain"> <span class="title">2018 Maserati Quattroporte </h2> 
+            <div class="titleBoxmain"> <span class="title">CAR TWO</h2> 
             </div> <!--div titlebox-->
                 
                 <div class="frame">
                         <div class="inner">
                          <!----  <a href="https://www.mvpatl.com/rental_cars/2019-rolls-royce-cullinan-c-4/"> -->
-                                <img class="full resized" src="img/lambo3.png" alt="2018 Maserati Quattroporte "  class = "img-responsive" width = "100%">
+                                <img class="full resized" src="img/lambo3.png" alt="Used 2019 ROLLS ROYCE CULLINAN-Atlanta, GA"  class = "img-responsive" width = "100%">
                         <!----   </a>-->
                         </div><!--div inner-->
                 </div> <!--div frame-->
@@ -480,23 +220,22 @@ for (var i = 0; i < btns.length; i++) {
                                       </div><!--div btnsbox--> 
                  </div> <!--div details--> <hr class ="priceline">  
  </div><!--div item-->
-</div> <!--filterDIV-->
+          
 </div>  <!--col-->
           
 
 <!--CAR THREE-->
 
-<div class="col-xs-12 col-sm-6 col-md-3   car-col" style="height: 694px;">
-  <div class="filterDiv 2021 Chevrolet Corvette red"> 
-  <div class="item" title="2021 Chevrolet Corvette">
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 car-col" style="height: 694px;">
+  <div class="item" title="Used 2019 ROLLS ROYCE CULLINAN-Atlanta, GA">
         <div class="vehicle">
-            <div class="titleBoxmain"> <span class="title">2021 Chevrolet Corvette</h2> 
+            <div class="titleBoxmain"> <span class="title">CAR THREE</h2> 
             </div> <!--div titlebox-->
                 
                 <div class="frame">
                         <div class="inner">
                            
-                                <img class="full resized" src="img/lambo4.png" alt="2021 Chevrolet Corvette"  class = "img-responsive" width = "100%">
+                                <img class="full resized" src="img/lambo4.png" alt="Used 2019 ROLLS ROYCE CULLINAN-Atlanta, GA"  class = "img-responsive" width = "100%">
                          
                         </div><!--div inner-->
                 </div> <!--div frame-->
@@ -531,22 +270,23 @@ for (var i = 0; i < btns.length; i++) {
                                       </div><!--div btnsbox--> 
                  </div> <!--div details--> <hr class ="priceline">  
  </div><!--div item-->
-          </div> <!--filterDIV-->
+          
 </div>  <!--col-->
+</div> <!--row-->
 
+<div class="row">
 
 <!--CAR FOUR-->
-<div class="col-xs-12 col-sm-6 col-md-3  car-col" style="height: 694px;">
-  <div class="filterDiv 2019 Chevrolet Corvette white">
-  <div class="item" title="2019 Chevrolet Corvette ">
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 car-col" style="height: 694px;">
+  <div class="item" title="Used 2019 ROLLS ROYCE CULLINAN-Atlanta, GA">
         <div class="vehicle">
-            <div class="titleBoxmain"> <span class="title">2019 Chevrolet Corvette </h2> 
+            <div class="titleBoxmain"> <span class="title">CAR FOUR</h2> 
             </div> <!--div titlebox-->
                 
                 <div class="frame">
                         <div class="inner">
                             
-                                <img class="full resized" src="img/lambo15.png" alt="2019 Chevrolet Corvette "  class = "img-responsive" width = "100%">
+                                <img class="full resized" src="img/lambo15.png" alt="Used 2019 ROLLS ROYCE CULLINAN-Atlanta, GA"  class = "img-responsive" width = "100%">
                             
                         </div><!--div inner-->
                 </div> <!--div frame-->
@@ -581,22 +321,21 @@ for (var i = 0; i < btns.length; i++) {
                                       </div><!--div btnsbox--> 
                  </div> <!--div details--> <hr class ="priceline">  
  </div><!--div item-->
-  </div> <!--filterDIV-->
+          
 </div>  <!--col-->
 
 
 <!--CAR FIVE-->
-<div class="col-xs-12 col-sm-6 col-md-3  car-col" style="height: 694px;">
-  <div class="filterDiv 2018 BMW 650i white">
-  <div class="item" title="2018 BMW 650i ">
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 car-col" style="height: 694px;">
+  <div class="item" title="Used 2019 ROLLS ROYCE CULLINAN-Atlanta, GA">
         <div class="vehicle">
-            <div class="titleBoxmain"> <span class="title">2018 BMW 650i </h2> 
+            <div class="titleBoxmain"> <span class="title">CAR FIVE</h2> 
             </div> <!--div titlebox-->
                 
                 <div class="frame">
                         <div class="inner">
                          
-                                <img class="full resized" src="img/lambo1.png" alt="2018 BMW 650i "  class = "img-responsive" width = "100%">
+                                <img class="full resized" src="img/lambo1.png" alt="Used 2019 ROLLS ROYCE CULLINAN-Atlanta, GA"  class = "img-responsive" width = "100%">
                           
                         </div><!--div inner-->
                 </div> <!--div frame-->
@@ -631,23 +370,22 @@ for (var i = 0; i < btns.length; i++) {
                                       </div><!--div btnsbox--> 
                  </div> <!--div details--> <hr class ="priceline">  
  </div><!--div item-->
-          </div><!--filterDIV-->
+          
 </div>  <!--col-->
           
 
 
 <!--CAR SIX-->
-<div class="col-xs-12 col-sm-6 col-md-3   car-col" style="height: 694px;">
-  <div class="filterDiv 2018 Porsche Macan white">
-  <div class="item" title="2018 Porsche Macan">
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 car-col" style="height: 694px;">
+  <div class="item" title="Used 2019 ROLLS ROYCE CULLINAN-Atlanta, GA">
         <div class="vehicle">
-            <div class="titleBoxmain"> <span class="title">2018 Porsche Macan</h2> 
+            <div class="titleBoxmain"> <span class="title">CAR SIX</h2> 
             </div> <!--div titlebox-->
                 
                 <div class="frame">
                         <div class="inner">
                            
-                                <img class="full resized" src="img/lambo9.png" alt="2018 Porsche Macan"  class = "img-responsive" width = "100%">
+                                <img class="full resized" src="img/lambo9.png" alt="Used 2019 ROLLS ROYCE CULLINAN-Atlanta, GA"  class = "img-responsive" width = "100%">
                            
                         </div><!--div inner-->
                 </div> <!--div frame-->
@@ -684,22 +422,23 @@ for (var i = 0; i < btns.length; i++) {
  </div><!--div item-->
           
 </div>  <!--col-->
-</div> <!--filterDIV-->
 
-   
+          </div><!--div row-->
+
+          
+<div class="row">
 
   <!--CAR SEVEN-->
-  <div class="col-xs-12 col-sm-6 col-md-3   car-col" style="height: 694px;">
-    <div class="filterDiv 2017 Jeep Wrangler Rubicon gray">
-    <div class="item" title="2017 Jeep Wrangler Rubicon ">
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 car-col" style="height: 694px;">
+    <div class="item" title="Used 2019 ROLLS ROYCE CULLINAN-Atlanta, GA">
           <div class="vehicle">
-              <div class="titleBoxmain"> <span class="title">2017 Jeep Wrangler Rubicon </h2> 
+              <div class="titleBoxmain"> <span class="title">CAR SEVEN</h2> 
               </div> <!--div titlebox-->
                   
                   <div class="frame">
                           <div class="inner">
                              
-                                  <img class="full resized" src="img/lambo10.png" alt="2017 Jeep Wrangler Rubicon "  class = "img-responsive" width = "100%">
+                                  <img class="full resized" src="img/lambo10.png" alt="Used 2019 ROLLS ROYCE CULLINAN-Atlanta, GA"  class = "img-responsive" width = "100%">
                              
                           </div><!--div inner-->
                   </div> <!--div frame-->
@@ -734,23 +473,21 @@ for (var i = 0; i < btns.length; i++) {
                                         </div><!--div btnsbox--> 
                    </div> <!--div details--> <hr class ="priceline">  
    </div><!--div item-->
-            </div> <!--filterDIV-->
-
+            
   </div>  <!--col-->
   
   
   <!--CAR EIGHT-->
-  <div class="col-xs-12 col-sm-6 col-md-3   car-col" style="height: 694px;">
-    <div class="filterDiv 2018 Jeep Wrangler Rubicon black">
-    <div class="item" title="2018 Jeep Wrangler Rubicon">
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 car-col" style="height: 694px;">
+    <div class="item" title="Used 2019 ROLLS ROYCE CULLINAN-Atlanta, GA">
           <div class="vehicle">
-              <div class="titleBoxmain"> <span class="title">2018 Jeep Wrangler Rubicon</h2> 
+              <div class="titleBoxmain"> <span class="title">CAR EIGHT</h2> 
               </div> <!--div titlebox-->
                   
                   <div class="frame">
                           <div class="inner">
                               
-                                  <img class="full resized" src="img/lambo11.png" alt="2018 Jeep Wrangler Rubicon"  class = "img-responsive" width = "100%">
+                                  <img class="full resized" src="img/lambo11.png" alt="Used 2019 ROLLS ROYCE CULLINAN-Atlanta, GA"  class = "img-responsive" width = "100%">
                              
                           </div><!--div inner-->
                   </div> <!--div frame-->
@@ -785,23 +522,22 @@ for (var i = 0; i < btns.length; i++) {
                                         </div><!--div btnsbox--> 
                    </div> <!--div details--> <hr class ="priceline">  
    </div><!--div item-->
-            </div><!--filterDIV-->
+            
   </div>  <!--col-->
             
   
   
   <!--CAR NINE-->
-  <div class="col-xs-12 col-sm-6 col-md-3    car-col" style="height: 694px;">
-    <div class="filterDiv 2016 Jeep Wrangler red">
-    <div class="item" title="2016 Jeep Wrangler">
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 car-col" style="height: 694px;">
+    <div class="item" title="Used 2019 ROLLS ROYCE CULLINAN-Atlanta, GA">
           <div class="vehicle">
-              <div class="titleBoxmain"> <span class="title">2016 Jeep Wrangler</h2> 
+              <div class="titleBoxmain"> <span class="title">CAR NINE</h2> 
               </div> <!--div titlebox-->
                   
                   <div class="frame">
                           <div class="inner">
                               
-                                  <img class="full resized" src="img/lambo12.png" alt="2016 Jeep Wrangler"  class = "img-responsive" width = "100%">
+                                  <img class="full resized" src="img/lambo12.png" alt="Used 2019 ROLLS ROYCE CULLINAN-Atlanta, GA"  class = "img-responsive" width = "100%">
                              
                           </div><!--div inner-->
                   </div> <!--div frame-->
@@ -836,109 +572,7 @@ for (var i = 0; i < btns.length; i++) {
                                         </div><!--div btnsbox--> 
                    </div> <!--div details--> <hr class ="priceline">  
    </div><!--div item-->
-  </div> <!--filterDIV-->
-  </div>  <!--col-->
-
-  
-  
-  <!--CAR TEN-->
-  <div class="col-xs-12 col-sm-6 col-md-3  car-col" style="height: 694px;">
-    <div class="filterDiv 2018 BMW 2 Series gray">
-    <div class="item" title="2018 BMW 2 Series ">
-          <div class="vehicle">
-              <div class="titleBoxmain"> <span class="title">2018 BMW 2 Series </h2> 
-              </div> <!--div titlebox-->
-                  
-                  <div class="frame">
-                          <div class="inner">
-                              
-                                  <img class="full resized" src="img/lambo12.png" alt="2018 BMW 2 Series "  class = "img-responsive" width = "100%">
-                             
-                          </div><!--div inner-->
-                  </div> <!--div frame-->
-          </div> <!--div vehicle-->
-  
-  
-               <div class="details">
-                       <div class="miniInf">
-                       
-                          <div class="price"> Prices Starting at: $2,199 
-                          </div> <!--div price-->
-                              <div class="year"> Year: 2022	  
-                              </div> <!--div year-->
-  
-                           
-                          
-                      </div> <!--div MiniInf--> <hr class ="priceline"> 
-  
-                     <div class="descriptionBox">
-  
-                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                     </div> <!--div descriptionbox--> <hr class ="priceline"> 
-  
-                                      <div class="btnsBox">
-                                           <a href="car-onephotos.html" class="buttonreservephoto" id="photosbtn" title="View Vehicle Photos">
-                                                  Photos
-                                              </a> 
-                                            <a href="#" class="buttonreservephoto" id="reservebtn" title="View Vehicle Details">
-                                                  Reserve Now
-                                              </a> 
-                                  
-                                        </div><!--div btnsbox--> 
-                   </div> <!--div details--> <hr class ="priceline">  
-   </div><!--div item-->
-  </div> <!--filterDIV-->
-  </div>  <!--col-->
-
-  
-  
-  <!--CAR ELEVEN-->
-  <div class="col-xs-12 col-sm-6 col-md-3  car-col" style="height: 694px;">
-    <div class="filterDiv 2019 Can-Am 3 Wheeler black ">
-    <div class="item" title="2019 Can-Am 3 Wheeler">
-          <div class="vehicle">
-              <div class="titleBoxmain"> <span class="title">2019 Can-Am 3 Wheeler</h2> 
-              </div> <!--div titlebox-->
-                  
-                  <div class="frame">
-                          <div class="inner">
-                              
-                                  <img class="full resized" src="img/lambo12.png" alt="2019 Can-Am 3 Wheeler"  class = "img-responsive" width = "100%">
-                             
-                          </div><!--div inner-->
-                  </div> <!--div frame-->
-          </div> <!--div vehicle-->
-  
-  
-               <div class="details">
-                       <div class="miniInf">
-                       
-                          <div class="price"> Prices Starting at: $2,199 
-                          </div> <!--div price-->
-                              <div class="year"> Year: 2022	  
-                              </div> <!--div year-->
-  
-                           
-                          
-                      </div> <!--div MiniInf--> <hr class ="priceline"> 
-  
-                     <div class="descriptionBox">
-  
-                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                     </div> <!--div descriptionbox--> <hr class ="priceline"> 
-  
-                                      <div class="btnsBox">
-                                           <a href="car-onephotos.html" class="buttonreservephoto" id="photosbtn" title="View Vehicle Photos">
-                                                  Photos
-                                              </a> 
-                                            <a href="#" class="buttonreservephoto" id="reservebtn" title="View Vehicle Details">
-                                                  Reserve Now
-                                              </a> 
-                                  
-                                        </div><!--div btnsbox--> 
-                   </div> <!--div details--> <hr class ="priceline">  
-   </div><!--div item-->
-  </div> <!--filterDIV-->
+            
   </div>  <!--col-->
   
             </div><!--div row-->
